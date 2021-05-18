@@ -4,12 +4,14 @@
 //
 //  Created by Pavlo Boiko on 28.06.18.
 //
-
+import Foundation
 import CryptoSwift
 
 // NOTE: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md
 public struct EIP55 {
     public static func encode(_ data: Data) -> String {
+        
+        
         let address = data.toHexString()
         
         let hash = Crypto.sha3keccak256(data: address.data(using: .ascii)!).toHexString()

@@ -39,7 +39,7 @@ public struct OpInvert: OpCodeProtocol {
         try context.assertStackHeightGreaterThanOrEqual(1)
 
         let x = context.stack.removeLast()
-        let output: Data = Data(from: x.map { ~$0 })
+        let output: Data = try Data(from: x.map { ~$0 } as! Decoder)
         context.stack.append(output)
     }
 }
