@@ -5,14 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "HDWalletKit",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "HDWalletKit",
             targets: ["HDWalletKit"]),
-    ],
-    platforms: [
-        .iOS(.v13)
     ],
     dependencies: [
 	.package(url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.0"),
