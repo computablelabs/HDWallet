@@ -1,6 +1,5 @@
 //
 //  DerivationNode.swift
-//  CryptoSwift
 //
 //  Created by Pavlo Boiko on 02.07.18.
 //

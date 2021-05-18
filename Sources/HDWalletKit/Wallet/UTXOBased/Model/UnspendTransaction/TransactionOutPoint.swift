@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CryptoSwift
 
 public struct TransactionOutPoint {
     /// The hash of the referenced transaction.
