@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CryptoSwift
+//import CryptoSwift
 
 // The input is hashed using SHA-1.
 public struct OpSha1: OpCodeProtocol {
